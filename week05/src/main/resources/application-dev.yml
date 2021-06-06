@@ -24,3 +24,8 @@ spring:
     connection-timeout: 30000
     connection-test-query: SELECT 1
 
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  typeAliasesPackage: com.works.homework10.entity
+
+

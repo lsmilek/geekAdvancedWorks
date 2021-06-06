@@ -1,4 +1,4 @@
-package com.works.homework10;
+package com.works.homework10.entity;
 
 import java.util.Date;
 

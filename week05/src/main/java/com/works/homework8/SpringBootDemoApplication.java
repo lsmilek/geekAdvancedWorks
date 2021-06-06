@@ -17,7 +17,7 @@ public class SpringBootDemoApplication {
         School school = (School) context.getBean("school");
         school.ding();
 
-        //获取不到mapper实例？？？？
+
         HikariDemo hikariDemo = (HikariDemo) context.getBean("hikariDemo");
         hikariDemo.insert();
 

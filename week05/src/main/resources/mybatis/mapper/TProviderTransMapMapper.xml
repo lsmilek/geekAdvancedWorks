@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.works.homework10.mapper.TProviderTransMapMapper">
-  <resultMap id="BaseResultMap" type="com.works.homework10.TProviderTransMap">
+  <resultMap id="BaseResultMap" type="com.works.homework10.entity.TProviderTransMap">
     <id column="MERORDERNO" jdbcType="VARCHAR" property="merorderno" />
     <result column="TRACE" jdbcType="VARCHAR" property="trace" />
     <result column="INTIME" jdbcType="TIMESTAMP" property="intime" />
@@ -20,13 +20,13 @@
     delete from t_provider_transmap
     where MERORDERNO = #{merorderno,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.works.homework10.TProviderTransMap">
+  <insert id="insert" parameterType="com.works.homework10.entity.TProviderTransMap">
     insert into t_provider_transmap (MERORDERNO, TRACE, INTIME, 
       MODTIME)
     values (#{merorderno,jdbcType=VARCHAR}, #{trace,jdbcType=VARCHAR}, #{intime,jdbcType=TIMESTAMP}, 
       #{modtime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.works.homework10.TProviderTransMap">
+  <insert id="insertSelective" parameterType="com.works.homework10.entity.TProviderTransMap">
     insert into t_provider_transmap
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="merorderno != null">
@@ -57,7 +57,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.works.homework10.TProviderTransMap">
+  <update id="updateByPrimaryKeySelective" parameterType="com.works.homework10.entity.TProviderTransMap">
     update t_provider_transmap
     <set>
       <if test="trace != null">
@@ -72,7 +72,7 @@
     </set>
     where MERORDERNO = #{merorderno,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.works.homework10.TProviderTransMap">
+  <update id="updateByPrimaryKey" parameterType="com.works.homework10.entity.TProviderTransMap">
     update t_provider_transmap
     set TRACE = #{trace,jdbcType=VARCHAR},
       INTIME = #{intime,jdbcType=TIMESTAMP},

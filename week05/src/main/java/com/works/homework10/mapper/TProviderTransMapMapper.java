@@ -1,6 +1,6 @@
 package com.works.homework10.mapper;
 
-import com.works.homework10.TProviderTransMap;
+import com.works.homework10.entity.TProviderTransMap;
 import org.springframework.stereotype.Repository;
 
 @Repository
