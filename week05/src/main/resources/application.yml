@@ -1,0 +1,4 @@
+spring:
+  profiles:
+    #本地启动使用local，上测试生产，压测使用（dev,lr,prod）和spring激活配置文件使用相同的值
+    active: dev
