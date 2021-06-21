@@ -160,21 +160,43 @@
             <version>1.10.19</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>shardingsphere-jdbc-core</artifactId>
+            <version>5.0.0-alpha</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shardingsphere</groupId>
+            <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
+            <version>5.0.0-alpha</version>
+        </dependency>
+        <dependency>
+            <groupId>io.shardingsphere</groupId>
+            <artifactId>sharding-jdbc-core</artifactId>
+            <version>3.0.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-client</artifactId>
             <version>5.15.0</version>
         </dependency>
+        <!--db2的连接工具__开始-->
         <dependency>
-            <groupId>com.ibm</groupId>
+            <groupId>com.umpay.dba</groupId>
             <artifactId>db2jcc</artifactId>
-            <version>v9.5fp5</version>
+            <version>v9.5fp10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.umpay.dba</groupId>
+            <artifactId>db2jcc_license_cu</artifactId>
+            <version>v9.5fp10</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.0.8</version>
+            <version>5.1.47</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -252,6 +274,11 @@
                     <artifactId>jsqlparser</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
 

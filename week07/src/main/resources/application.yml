@@ -1,6 +1,6 @@
 spring:
   datasource-on:
-    url: jdbc:mysql://localhost:3316/test
+    url: jdbc:mysql://localhost:3316/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: root
     driver_class_name: com.mysql.jdbc.Driver
@@ -20,7 +20,7 @@ spring:
     filters: stat,wall,log4j
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   datasource-off:
-    url: jdbc:mysql://localhost:3326/test
+    url: jdbc:mysql://localhost:3326/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: root
     driver_class_name: com.mysql.jdbc.Driver
@@ -41,4 +41,6 @@ spring:
 mybatis:
   shardingConfig: mybatis/shard_config.xml
   typeAliasesPackage: com.umfintech.entity
+
+
 
