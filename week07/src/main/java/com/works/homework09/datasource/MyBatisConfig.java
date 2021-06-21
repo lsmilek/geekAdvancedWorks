@@ -108,14 +108,7 @@ public class MyBatisConfig implements EnvironmentAware {
     }
 
 
-    /**
-     * @param dataSourceOn
-     * @param dataSourceOff
-     * @return SqlSession工厂
-     * @ 根据数据源创建SqlSessionFactory
-     * @auth like
-     * @date 2018/1/29 16:18
-     */
+
     @Bean
     public SqlSessionFactory sqlSessionFactory(@Qualifier("dataSourceOn") DataSource dataSourceOn,
                                                @Qualifier("dataSourceOff") DataSource dataSourceOff) throws Exception {

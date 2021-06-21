@@ -20,7 +20,7 @@ public class DataSourceAspect {
 	/**
      * 使用空方法定义切点表达式
      */
-    @Pointcut("execution(* com.umfintech.mapper.*.*(..))")
+    @Pointcut("execution(* com.works.homework09.mapper.*.*(..))")
     public void declareJointPointExpression() {
     }
 
